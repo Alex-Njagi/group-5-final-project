@@ -130,7 +130,7 @@ p {
         align-items: center;
         text-align: center;
         flex-direction: row; /* Display links in a column */
-        margin-top: -50px; /* Adjust margin for better spacing */
+        margin-top: -45px; /* Adjust margin for better spacing */
     }
 
     nav a {
