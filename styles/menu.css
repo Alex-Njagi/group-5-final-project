@@ -125,6 +125,7 @@ p {
     }
 
     nav {
+        justify-content: center;
         align-items: center;
         text-align: center;
         flex-direction: row; /* Display links in a column */
