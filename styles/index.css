@@ -7,8 +7,6 @@ body {
     font-family: 'Bahnschrift';
     background-image: url(../images/mexican.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     overflow: hidden;
     display: flex;
@@ -58,18 +56,23 @@ footer div div img {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 100%) {
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: auto 40%; /* Adjust background image size */
+        background-position: top; /* Position image at the top */
+    }
+
     nav {
-        margin-top: 0;
+        flex-direction: column; /* Display links in a column */
+        margin-top: 20px; /* Adjust margin for better spacing */
     }
+
     nav a {
-        margin: 5px;
-        font-size: large;
+        margin: 10px 0; /* Adjust link margin */
     }
-    footer p {
-        font-size: medium;
-    }
-    footer div div img {
-        margin: 5px;
+
+    footer {
+        position: static; /* Place footer below content */
+        margin-top: 20px; /* Adjust margin for better spacing */
     }
 }
