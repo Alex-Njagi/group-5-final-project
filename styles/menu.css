@@ -139,7 +139,7 @@ p {
         align-items: center;
     }
 
-    #recipecontainer {
+    #recipes .recipecontainer {
         margin: 100px;
     }
 
