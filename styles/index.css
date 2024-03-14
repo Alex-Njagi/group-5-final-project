@@ -56,9 +56,9 @@ footer div div img {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: fit-content) {
     body {
-        background-size: cover; /* Adjust background image size */
+        background-size: cover 100%; /* Adjust background image size */
         background-repeat: no-repeat;
         background-position: top; /* Position image at the top */
     }
