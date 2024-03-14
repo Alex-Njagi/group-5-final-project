@@ -116,3 +116,25 @@ p {
     font-weight: normal;
     padding: 15px;
 }        
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        align-items: center;
+        flex-direction: row; /* Display links in a column */
+        margin-top: 5px; /* Adjust margin for better spacing */
+    }
+
+    nav a {
+        margin: 5px 0; /* Adjust link margin */
+    }
+
+    #recipes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
