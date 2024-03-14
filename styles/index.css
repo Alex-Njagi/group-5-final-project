@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+body {
+    font-family: 'Bahnschrift';
+    background-image: url(../images/mexican.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5e58dd0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: -60px;
+}
+
+nav a {
+    margin: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer #copyright {
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    margin-left: 17px;
+    margin-top: 10px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer div div img {
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        margin-top: 0;
+    }
+    nav a {
+        margin: 5px;
+        font-size: large;
+    }
+    footer p {
+        font-size: medium;
+    }
+    footer div div img {
+        margin: 5px;
+    }
+}
