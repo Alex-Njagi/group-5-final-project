@@ -135,6 +135,10 @@ p {
         margin-left: 5px; /* Adjust link margin */
     }
 
+    p {
+        text-align: center;
+    }
+
     #recipes {
         flex-direction: column;
         justify-content: center;
