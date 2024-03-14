@@ -63,7 +63,6 @@ footer div div img {
     }
 
     nav {
-        justify-content: center;
         align-items: center;
         flex-direction: column; /* Display links in a column */
         margin-top: 20px; /* Adjust margin for better spacing */
