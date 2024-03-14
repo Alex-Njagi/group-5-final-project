@@ -60,7 +60,7 @@ footer div div img {
     body {
         background-size: cover 100%; /* Adjust background image size */
         background-repeat: no-repeat;
-        background-position: top; /* Position image at the top */
+        /* background-position: top; Position image at the top */
     }
 
     nav {
