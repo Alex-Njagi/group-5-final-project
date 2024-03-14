@@ -119,22 +119,27 @@ p {
 
 @media only screen and (max-width: 600px) {
     header {
+        align-items: center;
         flex-direction: column;
     }
 
     nav {
         align-items: center;
         flex-direction: row; /* Display links in a column */
-        margin-top: 5px; /* Adjust margin for better spacing */
+        margin-top: 2px; /* Adjust margin for better spacing */
     }
 
     nav a {
-        margin: 5px 0; /* Adjust link margin */
+        margin-left: 5px; /* Adjust link margin */
     }
 
     #recipes {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #recipecontainer {
+        margin-top: 60px;
     }
 }
