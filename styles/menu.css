@@ -125,6 +125,7 @@ p {
     }
 
     nav {
+        margin: 100px;
         margin-left: 0px;
         justify-content: center;
         align-items: center;
