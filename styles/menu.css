@@ -125,12 +125,12 @@ p {
     }
 
     nav {
-        margin-left: 20px;
+        margin-left: 30px;
         justify-content: center;
         align-items: center;
         text-align: center;
         flex-direction: row; /* Display links in a column */
-        margin-top: 2px; /* Adjust margin for better spacing */
+        margin-top: -5px; /* Adjust margin for better spacing */
     }
 
     nav a {
