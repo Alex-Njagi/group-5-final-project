@@ -129,12 +129,12 @@ p {
         justify-content: center;
         align-items: center;
         text-align: center;
-        flex-direction: row; /* Display links in a column */
-        margin-top: -35px; /* Adjust margin for better spacing */
+        flex-direction: row;
+        margin-top: -35px;
     }
 
     nav a {
-        margin-left: 5px; /* Adjust link margin */
+        margin-left: 5px;
     }
 
     p {
