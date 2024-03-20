@@ -62,6 +62,10 @@
         font-size: 65px;
         margin: -10px;
     }
+
+    main #about {
+        margin-right: 20px;
+    }
     
     main #about p, ol {
         color: #0a5700;
