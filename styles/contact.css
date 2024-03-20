@@ -3,103 +3,108 @@
     src: url(../fonts/BAHNSCHRIFT.TTF);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: -8px;
-}
-
-header #toplogo {
-    margin-top: -10px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-top: 15px;
-}
-
-nav a {
-    margin: 20px;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    color: black;
-    transition: .5s;
-}
-
-nav a:hover {
-    color: #C66424;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
-    font-family: 'Bahnschrift';
-    background-image: url('../images/background.png');
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-main h2 {
-    text-align: center;
-    font-size: 55px;
-    color: #C66424;
-    margin: 10px;
-}
-
-main #socialsbox {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-}
-
-main .socials {
-    display: flex;
-    padding-top: 10px; 
-    text-align: center; 
-    padding-right: 30px; 
-    justify-content: center; 
-    align-items: center;
-}
-
-main .socials div {
-    padding: 50px;
-}
-
-main #contactsbox {
-    color: #0a5700;
-    justify-content: center; 
-    align-items: center;
-}
-
-main .contacts {
-    padding: 5px; 
-    text-align: justify;
-}
-
-main .contacts h4 {
-    margin-bottom: 0px; 
-    font-family: 'Bahnschrift'; 
-    font-size: 40px; 
-    text-align: center;
-}
-
-main .contact {
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-}
-
-main .contacts p {
-    font-family: 'Bahnschrift'; 
-    margin: 0; 
-    font-size: 20px;
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: -8px;
+    }
+    
+    header #toplogo {
+        margin-top: -10px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-top: 15px;
+    }
+    
+    nav a {
+        margin: 20px;
+        font-weight: bold;
+        font-size: large;
+        text-decoration: none;
+        color: black;
+        transition: .5s;
+    }
+    
+    nav a:hover {
+        color: #C66424;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+        font-family: 'Bahnschrift';
+        background-image: url('../images/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    main h2 {
+        text-align: center;
+        font-size: 55px;
+        color: #C66424;
+        margin: 10px;
+    }
+    
+    main #socialsbox {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    main .socials {
+        display: flex;
+        padding-top: 10px; 
+        text-align: center; 
+        padding-right: 30px; 
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    main .socials div {
+        padding: 50px;
+    }
+    
+    main #contactsbox {
+        color: #0a5700;
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    main .contacts {
+        padding: 5px; 
+        text-align: justify;
+    }
+    
+    main .contacts h4 {
+        margin-bottom: 0px; 
+        font-family: 'Bahnschrift'; 
+        font-size: 40px; 
+        text-align: center;
+    }
+    
+    main .contact {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    main .contacts p {
+        font-family: 'Bahnschrift'; 
+        margin: 0; 
+        font-size: 20px;
+    }
 }
