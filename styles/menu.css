@@ -11,6 +11,7 @@
         background-image: url('../images/background.png');
         background-repeat: no-repeat;
         margin: -8px;
+        width: auto;
     }
     
     header #toplogo {
