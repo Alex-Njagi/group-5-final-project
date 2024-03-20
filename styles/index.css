@@ -7,7 +7,6 @@ body {
     font-family: 'Bahnschrift';
     background-image: url(../images/mexican.jpg);
     background-size: cover;
-    background-position: center;
     overflow: hidden;
     display: flex;
     flex-direction: column;
