@@ -59,6 +59,7 @@ footer div div img {
     body {
         background-size: cover 100vh; /* Adjust background image size */
         background-repeat: no-repeat;
+        background-position: center;
         overflow: hidden;
     }
 
