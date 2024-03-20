@@ -5,8 +5,6 @@
 
 @media only screen and (min-width: 768px) {
     body {
-        width: 100%;
-        min-height: 100vh;
         font-family: 'Bahnschrift';
         background-image: url(../images/mexican.jpg);
         background-size: cover;
