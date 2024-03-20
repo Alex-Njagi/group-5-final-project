@@ -3,7 +3,7 @@
     src: url(../fonts/BAHNSCHRIFT.TTF);
 }
 
-@media only screen and (min-width: auto) {
+@media only screen and (min-width: 768px) {
     body {
         font-family: 'Bahnschrift';
         background-image: url(../images/mexican.jpg);
