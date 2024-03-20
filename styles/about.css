@@ -3,67 +3,71 @@
     src: url(../fonts/BAHNSCHRIFT.TTF);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: -8px;
-}
-
-header #toplogo {
-    margin-top: -10px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-top: 15px;
-}
-
-nav a {
-    margin: 20px;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    color: black;
-    transition: .5s;
-}
-
-nav a:hover {
-    color: #C66424;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Bahnschrift';
-    background-image: url('../images/background.png');
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-main h1 {
-    color: #C66424;
-    font-size: 65px;
-    margin: -10px;
-}
-
-main #about p, ol {
-    color: #0a5700;
-    font-size: large;
-}
-
-ol {
-    list-style-type: none;
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: -8px;
+    }
+    
+    header #toplogo {
+        margin-top: -10px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-top: 15px;
+    }
+    
+    nav a {
+        margin: 20px;
+        font-weight: bold;
+        font-size: large;
+        text-decoration: none;
+        color: black;
+        transition: .5s;
+    }
+    
+    nav a:hover {
+        color: #C66424;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Bahnschrift';
+        background-image: url('../images/background.png');
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    main h1 {
+        color: #C66424;
+        font-size: 65px;
+        margin: -10px;
+    }
+    
+    main #about p, ol {
+        color: #0a5700;
+        font-size: large;
+    }
+    
+    ol {
+        list-style-type: none;
+    }
 }
