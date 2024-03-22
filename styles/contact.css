@@ -136,6 +136,10 @@ main .contacts p {
         margin-left: 5px;
     }
 
+    main .socials {
+        margin-left: 300px;
+    }
+
     main .socials div {
         padding-left: 5px;
     }
