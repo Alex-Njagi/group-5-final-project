@@ -162,4 +162,25 @@ main {
     nav a {
         margin-left: 5px;
     }
+
+    #desc {
+        flex-direction: column;
+    }
+
+    #desc #recipedisplay {
+        font-size: 65px;
+        margin: 10px;
+        margin-left: 200px;
+    }
+    
+    #desc #recipedisplay h1 {
+        color: #C66424;
+        font-size: 65px;
+        margin: -40px;
+    }
+    
+    #desc #recipedisplay h6 {
+        font-size: 15px;
+        color: #6B320C;
+    }
 }
