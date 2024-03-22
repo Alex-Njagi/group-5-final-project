@@ -135,4 +135,12 @@ body {
     nav a {
         margin-left: 5px;
     }
+
+    #recipeForm {
+        margin-top: 40px;
+    }
+
+    #recipeForm #formRow {
+        flex-direction: column;
+    }
 }
