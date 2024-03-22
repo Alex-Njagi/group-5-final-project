@@ -168,18 +168,19 @@ main {
     }
 
     #desc img {
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
     }
 
     #desc #recipedisplay {
         font-size: 35px;
         margin: 10px;
+        margin-top: 40px;
     }
     
     #desc #recipedisplay h1 {
         color: #C66424;
-        font-size: 65px;
+        font-size: 45px;
         margin: -40px;
     }
     
