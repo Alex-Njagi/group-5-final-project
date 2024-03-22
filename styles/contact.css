@@ -111,10 +111,10 @@ main .contacts p {
 
 @media only screen and (max-width: 600px) {
     body {
-        background-size: cover;
+        background-size: cover 100vh;
         background-repeat: no-repeat;
         background-position: center;
-        overflow: visible;
+        overflow: hidden;
     }
 
     header {
@@ -137,7 +137,7 @@ main .contacts p {
     }
 
     main .socials {
-        margin-left: 100px;
+        margin-left: 90px;
     }
 
     main .socials div {
