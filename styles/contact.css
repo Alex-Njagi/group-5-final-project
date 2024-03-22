@@ -114,6 +114,7 @@ main .contacts p {
         background-size: cover 100vh;
         background-repeat: no-repeat;
         background-position: center;
+        overflow: visible;
         background-color: #f5e58dd0;
     }
 
