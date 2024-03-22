@@ -167,10 +167,14 @@ main {
         flex-direction: column;
     }
 
+    #desc img {
+        width: 250px;
+        height: 250px;
+    }
+
     #desc #recipedisplay {
-        font-size: 65px;
+        font-size: 35px;
         margin: 10px;
-        margin-left: 200px;
     }
     
     #desc #recipedisplay h1 {
