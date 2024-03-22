@@ -135,4 +135,8 @@ main .contacts p {
     nav a {
         margin-left: 5px;
     }
+
+    main .socials div {
+        padding: 5px;
+    }
 }
