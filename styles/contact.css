@@ -137,6 +137,10 @@ main .contacts p {
     }
 
     main .socials div {
-        padding: 5px;
+        padding-left: 5px;
+    }
+
+    main .socials img {
+        width: 50px;
     }
 }
