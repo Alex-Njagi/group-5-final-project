@@ -120,4 +120,8 @@ ol {
         font-size: 45px;
         margin: -10px;
     }
+
+    main #about {
+        margin-left: 20px;
+    }
 }
