@@ -96,3 +96,32 @@ button:hover {
     text-decoration: underline;
     color: #0a5700;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: visible;
+        background-color: #f5e58dd0;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        margin-top: -35px;
+    }
+
+    nav a {
+        margin-left: 5px;
+    }
+}
