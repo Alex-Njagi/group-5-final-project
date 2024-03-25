@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taco Talk Chatbot</title>
+<link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header>
+        <div id="toplogo">
+            <img 
+                src="../images/whitelogo.png"
+                width="150px"
+                height="150px"
+            />
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../menu.html">Back to Menu</a>
+            <a href="../about.html">About Us</a>
+            <a href="../contact.html">Contact Us</a>
+            <a href="../addrecipe.html">Add Your Recipe</a>
+        </nav>
+    </header>
+    <p style="text-align:center;">"The Taco Talker"</p>
+
+<div class="chat-container">
+    <div id="chat-box" class="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Start with a hi...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>

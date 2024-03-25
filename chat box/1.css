@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: -8px;
+}
+
+header #toplogo {
+    margin-top: -10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 20px;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: #C66424;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bahnschrift';
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+p {
+    font-family: 'Bahnschrift'; 
+    margin: 0; 
+    color: #0a5700;
+    border-style: none;
+    font-size: 30px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.chat-box {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 5px;
+}
+
+button {
+    font-family: 'Bahnschrift';
+    background-color: transparent;
+    border-style: none;
+    font-size: x-large;
+    font-weight: bold;
+    color: #C66424;
+    transition: .5s;
+    padding: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0a5700;
+}
