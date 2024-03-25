@@ -113,6 +113,7 @@ button:hover {
     }
 
     nav {
+        margin-left: 3px;
         justify-content: center;
         align-items: center;
         text-align: center;
