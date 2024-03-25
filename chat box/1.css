@@ -62,9 +62,11 @@ p {
     width: 500px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #6b320c;
 }
 
 .chat-box {
