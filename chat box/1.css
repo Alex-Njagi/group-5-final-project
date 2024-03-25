@@ -122,6 +122,19 @@ button:hover {
     }
 
     nav a {
-        margin-left: 5px;
+        margin-left: 3px;
+    }
+
+    p {
+        padding-left: 20px;
+    }
+
+    .chat-container {
+        width: 300px;
+    }
+
+    input[type="text"] {
+        width: calc(300px);
+        padding: 5px;
     }
 }
