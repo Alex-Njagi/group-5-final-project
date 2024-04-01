@@ -9,22 +9,24 @@
     bottom: 350px;
     right: 0;
     height:200px;  
+    cursor: pointer;
 }
 .chatimg{
       width: 100%;
   }
 #cancel{
     background: none;
+    cursor: pointer;
     
 }
 #cancel:hover{
-    background: red;
+    background: #0a5700;
 }
 .chatheader{
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: rebeccapurple;
+    background: #C66424;
 }
 
 #botcontainer{
@@ -73,7 +75,7 @@ font-size: .9rem;
     background-color: rebeccapurple;
     border-radius: 40px;
     border: none;
-
+    cursor: pointer;
 }
 
 /* CSS FOR CHAT ICON AND IMAGE BELLOW */

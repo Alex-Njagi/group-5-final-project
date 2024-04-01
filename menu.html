@@ -19,7 +19,6 @@
 
         <nav>
             <a href="./index.html">Home</a>
-            <a href="./chat box/chat.html">Chatbox</a>
             <a href="./about.html">About Us</a>
             <a href="./contact.html">Contact Us</a>
             <a href="./addrecipe.html">Add Your Recipe</a>
@@ -27,6 +26,43 @@
     </header>
 
     <p>We have <b>14</b> delicious recipes for you:</p>
+
+    <div>
+        <div class="botmain">
+            <div id="main__top">
+                <div class="chatheader">
+                    <span><img src="./images/blacklogo.png" alt="" height="50px" width="50px" style="border-radius: 50%;"></span>
+                    <span>Taco Talk</span>
+                    <button id="cancel" onclick="cancelBot()" ><img src="chat box/images/cancel.png" alt="" height="30px" width="30px"></button>
+                </div>
+                <div id="botcontainer">
+                    <div class="new-div">
+                        <div id="botheading">Bot
+                        </div>
+                        <p class="chatparag">Hi there!👋 <br>
+                            Ask me about any recipe.  
+                        </p>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="user-input" placeholder="Ask me about recipes here...">
+                    <button onclick=" sendmessage()" id="send-btn">Send</button>
+            
+                </div> 
+            </div>
+            <div class="main__buttom" id="hideShowChef">
+                <div id="chatcontainer">
+                    <!-- <div class="chathover">
+                        Hi!👋 Got any question<br>
+                            I can help you..
+                    </div> -->
+                    <div class="chaticon" onclick="startBot()">
+                        <img src="./images/blacklogo.png" alt="" class="chatimg">
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </div>
 
     <div id="recipes">
         <div class="recipecontainer">
@@ -40,15 +76,8 @@
             />           
             <a href="./recipes/Melat's recipes/Guacamole.html"><p>Classic Guacamole</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>113</p>
+            <div class="author">
+                <p>By Melat Berhe</p>
             </div>
         </div>
 
@@ -63,15 +92,8 @@
             />           
             <a href="./recipes/Melat's recipes/Tacos al pastor.html"><p>Tacos Al Pastor</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>201</p>
+            <div class="author">
+                <p>By Melat Berhe</p>
             </div>
         </div>
 
@@ -86,15 +108,8 @@
             />           
             <a href="./recipes/Zahra's recipes/Carne asade tortas.html"><p>Carne Asada</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>141</p>
+            <div class="author">
+                <p>By Zahra Adan</p>
             </div>
         </div>
 
@@ -109,15 +124,8 @@
             />           
             <a href="./recipes/Zahra's recipes/Gorditas.html"><p>Gorditas</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>64</p>
+            <div class="author">
+                <p>By Zahra Adan</p>
             </div>
         </div>
     </div>
@@ -134,15 +142,8 @@
             />           
             <a href="./recipes/Go's recipes/Burrito.html"><p>Tasty Burrito</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>504</p>
+            <div class="author">
+                <p>By Go Igarashi</p>
             </div>
         </div>
 
@@ -157,15 +158,8 @@
             />           
             <a href="./recipes/Go's recipes/Elote.html"><p>Grilled Elote</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>301</p>
+            <div class="author">
+                <p>By Go Igarashi</p>
             </div>
         </div>
 
@@ -180,15 +174,8 @@
             />           
             <a href="./recipes/AnnJoy's recipes/ENCHILADA.html"><p>Enchiladas</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>159</p>
+            <div class="author">
+                <p>By AnnJoy Kendi</p>
             </div>
         </div>
 
@@ -203,15 +190,8 @@
             />           
             <a href="./recipes/AnnJoy's recipes/QUESADILLAS.html"><p>Cheesy Quesadillas</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>701</p>
+            <div class="author">
+                <p>By AnnJoy Kendi</p>
             </div>
         </div>
     </div>
@@ -228,15 +208,8 @@
             />           
             <a href="./recipes/Abdi's recipes/stuffed mushrooms/stuffed mushrooms.html"><p>Stuffed Mushrooms</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>98</p>
+            <div class="author">
+                <p>By Abdirizak Abdi</p>
             </div>
         </div>
 
@@ -251,15 +224,8 @@
             />           
             <a href="./recipes/Abdi's recipes/Tamarind chicken/tamarind chicken.html"><p>Tamarind Chicken</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>123</p>
+            <div class="author">
+                <p>By Abdirizak Abdi</p>
             </div>
         </div>
 
@@ -274,15 +240,8 @@
             />           
             <a href="./recipes/Jesse's recipes /pozole.html"><p>Pozole</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>89</p>
+            <div class="author">
+                <p>By Jesse Kariuki</p>
             </div>
         </div>
 
@@ -297,15 +256,8 @@
             />           
             <a href="./recipes/Jesse's recipes /tamales.html"><p>Tamales</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>202</p>
+            <div class="author">
+                <p>By Jesse Kariuki</p>
             </div>
         </div>
     </div>
@@ -322,15 +274,8 @@
             />           
             <a href="./recipes/Goodluck's recipes/first.html"><p>Chorizo and Eggs</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>8</p>
+            <div class="author">
+                <p>By Goodluck Alphaxard</p>
             </div>
         </div>
 
@@ -345,54 +290,12 @@
             />           
             <a href="./recipes/Goodluck's recipes/second.html"><p>France Bugger</p></a>
 
-            <div class="recipelikes">
-                <div>
-                    <img 
-                        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
-                        width="11px"
-                        alt="Likes"
-                    />
-                </div>
-                <p>12</p>
+            <div class="author">
+                <p>By Goodluck Alphaxard</p>
             </div>
         </div>
 
     </div>
-    <div class="botmain">
-        <div id="main__top">
-            <div class="chatheader">
-                <span><img src="chat box/images/tacologo.png" alt="" height="30px" width="30px" style="border-radius: 50%;"></span>
-                <span>Tako Talk</span>
-                <button id="cancel" onclick="cancelBot()" ><img src="chat box/images/cancel.png" alt="" height="30px" width="30px"></button>
-            </div>
-            <div id="botcontainer">
-                <div class="new-div">
-                    <div id="botheading">Bot
-                    </div>
-                    <p class="chatparag">Hi there!👋 <br>
-                        Ask me about recipe.  
-                    </p>
-                </div>
-            </div>
-            <div class="inputs">
-                <input type="text" id="user-input" placeholder="Ask me about recipes here...">
-                <button onclick=" sendmessage()" id="send-btn">Send</button>
-        
-            </div> 
-        </div>
-        <div class="main__buttom" id="hideShowChef">
-            <div id="chatcontainer">
-                <div class="chathover">
-                    Hi!👋 Got any question<br>
-                        I can help you..
-                </div>
-                <div class="chaticon" onclick="startBot()">
-                    <img src="chat box/images/tacologo.png" alt="" class="chatimg">
-                </div> 
-            </div>
-        </div>
-        
-    </div> 
 
     <script src="chat box/bot.js"></script>
 </body>

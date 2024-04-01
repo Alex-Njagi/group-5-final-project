@@ -113,6 +113,14 @@ function getBotResponse(input) {
         return "Mexican Stuffed Mushrooms are savory mushroom caps filled with a flavorful mixture of ingredients like cheese, herbs, spices, and sometimes meat, then baked until tender and golden.";
     } else if (lowerInput.includes("tamarind chicken")) {
         return "Tamarind Chicken is a delicious dish where chicken is marinated in a tangy tamarind sauce and then grilled, roasted, or cooked until tender and flavorful.";
+    } else if (lowerInput.includes("pozole")) {
+        return "Pozole is a traditional Mexican soup or stew that is often made with hominy (dried corn kernels that have been treated with an alkali), meat (usually pork or chicken), and various seasonings. The dish has deep roots in Mexican culinary history and is commonly associated with celebrations and special occasions.";
+    } else if (lowerInput.includes("tamales")) {
+        return "A tamale is a traditional Mesoamerican dish made of filled masa dough steamed in a corn husk. Masa is a maize dough made from ground nixtamalized corn.";
+    } else if (lowerInput.includes("chorizo and eggs")) {
+        return "Chorizo and Eggs is a spicy pork sausage. While the Spanish version is usually spiced with paprika and garlic, Mexican chorizo is spiced with chile peppers.";
+    } else if (lowerInput.includes("france bugger")) {
+        return "Chorizo and Eggs is a spicy pork sausage. While the Spanish version is usually spiced with paprika and garlic, Mexican chorizo is spiced with chile peppers.";
     } else {
         return "Sorry, I don't have information on that topic at the moment. Is there anything else you'd like to know?";
     }

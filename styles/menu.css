@@ -101,22 +101,17 @@ p {
     color: #e9d251d0;
 }
 
-#recipes .recipelikes {
+#recipes .author {
     margin: -40px;
     display: flex;
-    flex-direction: row;
 }
 
-#recipes .recipelikes p {
+#recipes .author p {
     font-size: 15px;
     font-weight: normal;
 }
 
-#recipes .recipelikes img {
-    font-size: 15px;
-    font-weight: normal;
-    padding: 15px;
-}
+
 
 /* @media only screen and (min-width: 768px) {
     
