@@ -1,148 +1,113 @@
-@font-face {
-    font-family: 'Bahnschrift';
-    src: url(../fonts/BAHNSCHRIFT.TTF);
+*{
+    box-sizing: border-box;
 }
 
-header {
+.botmain{
+    position:fixed;
+    width: 80%;
+    max-width: 300px;
+    bottom: 350px;
+    right: 0;
+    height:200px;  
+}
+.chatimg{
+      width: 100%;
+  }
+#cancel{
+    background: none;
+    
+}
+#cancel:hover{
+    background: red;
+}
+.chatheader{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin: -8px;
+    padding: 1em;
+    background: rebeccapurple;
 }
 
-header #toplogo {
-    margin-top: -10px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-top: 15px;
-}
-
-nav a {
-    margin: 20px;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    color: black;
-    transition: .5s;
-}
-
-nav a:hover {
-    color: #C66424;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Bahnschrift';
-    background-image: url('../images/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-p {
-    font-family: 'Bahnschrift'; 
-    margin: 0; 
-    color: #0a5700;
-    border-style: none;
-    font-size: 30px;
-}
-
-.chat-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #6b320c;
-}
-
-.chat-box {
-    width: 300px;
+#botcontainer{
     height: 200px;
+    background:white;
+    padding: 1em;
     overflow-y: auto;
+
+    
+}
+
+.new-div{
+    width: 95%;
+    background: #9ea2a8;
+    margin-bottom: 1em;
+    border-radius: 3px;
+    padding: .4em;
+    color: #6b320c;
+}
+#botheading{
+    width: fit-content;
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: 2px dotted;
+}
+
+.inputs{
+    border: 2px solid #9ea2a8 ;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    min-height: 50px;
+    background: white;
+    font-size: 2.1rem;
+    padding: .5em;
+}
+#user-input{
+    width: 80%;
+    border: none;
+}
+#send-btn{
+font-size: .9rem;
+    width: 20%;
+    max-width: 100px;
+    padding: .5em;
+    background-color: rebeccapurple;
+    border-radius: 40px;
+    border: none;
+
+}
+
+/* CSS FOR CHAT ICON AND IMAGE BELLOW */
+
+#chatcontainer{
+    
+    position: relative;
+    padding: 1em;
+}  
+.chaticon{
+    position: absolute;
+    border-radius:50% ;
+    overflow: hidden;
+    border: 3px solid  goldenrod;
+    width: 70px;
+    left: 125px;
+    top:70px;
+
+            
+}
+.chathover{
+    position:absolute;
+    border: 2px solid white;
+    padding: 1em;
+    background-color: antiquewhite;
     border-radius: 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #0a5700;
-    margin-bottom: 10px;
-    padding: 5px;
+
 }
 
-input[type="text"] {
-    width: calc(100% - 60px);
-    padding: 5px;
+#main__top{
+visibility:hidden;
 }
-
-button {
-    font-family: 'Bahnschrift';
-    background-color: transparent;
-    border-style: none;
-    font-size: x-large;
-    font-weight: bold;
-    color: #C66424;
-    transition: .5s;
-    padding: 20px;
-}
-
-button:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    color: #0a5700;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        background-size: cover 100vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        overflow: visible;
-        background-color: #f5e58dd0;
-    }
-
-    header {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    nav {
-        margin-left: 5px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: row;
-        margin-top: -35px;
-    }
-
-    nav a {
-        margin-left: 3px;
-    }
-
-    p {
-        margin-top: 20px;
-    }
-
-    .chat-container {
-        width: 300px;
-    }
-
-    input[type="text"] {
-        width: calc(300px);
-        padding: 5px;
-    }
+.main__buttom{
+position: relative;
+right: 0;
+bottom: 0;
 }

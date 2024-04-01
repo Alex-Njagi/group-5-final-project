@@ -1,20 +1,96 @@
-function sendMessage() {
-    const userInput = document.getElementById("user-input");
-    const chatBox = document.getElementById("chat-box");
-    const userText = userInput.value.trim();
+var contDiv = document.getElementById('botcontainer');
 
-    if (userText) {
-        chatBox.innerHTML += `<div>User: ${userText}</div>`;
-        const botResponse = getBotResponse(userText);
-        chatBox.innerHTML += `<div>Bot: ${botResponse}</div>`;
-        userInput.value = ""; // Clear input after sending
-        chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+
+// AUTO GENERETING THE DIVS FOR USER AND BOT
+function userDiv(paragraph) {
+    var userdiv = document.createElement('div');
+    var headers = document.createElement('div');
+    var para = document.createElement('p');
+    userdiv.classList.add('new-div'); // class for styling
+    para.id='chatpara'
+    headers.id='botheading'
+    userdiv.appendChild(headers)
+    userdiv.appendChild(para)
+    contDiv.appendChild(userdiv)
+    para.textContent=paragraph
+    headers.textContent='User'
+    
+}
+
+function chatDiv(paragraph){
+    var chatdiv = document.createElement('div');
+    var headers = document.createElement('div');
+    var para = document.createElement('p');
+    chatdiv.classList.add('new-div'); // class for styling
+    para.id='chatpara'
+    headers.id='botheading'
+    chatdiv.appendChild(headers)
+    chatdiv.appendChild(para)
+    contDiv.appendChild(chatdiv)
+    para.textContent=getBotResponse(paragraph)
+    headers.textContent='Bot'
+
+}
+
+// STARTING AND CANCELLING THE BOT
+isChefVisible=false;
+
+function startBot(){
+    console.log('starting the bot')
+    let chatContainerEl=document.getElementById('main__top');
+    chatContainerEl.style.visibility='visible';
+    isChefVisible=true;
+    hideAndShowChef()
+}
+
+
+function cancelBot(){
+    let bodyEL=document.querySelector('#main__top')
+    bodyEL.style.visibility='hidden'
+    isChefVisible=false
+    hideAndShowChef()
+}
+
+function hideAndShowChef() {
+    let chefEl = document.querySelector('#hideShowChef');
+    let chatContainerEl = document.getElementById('main__top');
+    let botHeight=document.querySelector('#botcontainer')
+
+    if (chatContainerEl.style.visibility === 'visible') {
+        chefEl.style.visibility = 'hidden';
+        botHeight.style.height=(botHeight.offsetHeight +100)+'px';
+    } else {
+        chefEl.style.visibility = 'visible';
+        botHeight.style.height=(botHeight.offsetHeight -100)+'px';
+    }
+
+    
+    isChefVisible = chatContainerEl.style.visibility !== 'visible';
+}
+
+
+
+// SETTING SMS AND GETTING RESPONSE FROM GET RESPONSE FUNC
+function sendmessage() {
+    let userInput = document.getElementById('user-input').value.trim();
+    let userField = document.getElementById('userinput');
+    if (userInput) {
+        userDiv(userInput)
+        chatDiv(userInput)
+        document.getElementById('user-input').value = "";
+        let autoScrol =document.querySelector('#botcontainer')
+        autoScrol.scrollTop = autoScrol.scrollHeight;
+    } else {
+        console.log('No text');
     }
 }
+
+//DEFINING REPONSE 
+
 function getBotResponse(input) {
     const lowerInput = input.toLowerCase();
     if (lowerInput.includes("hi")) {
-        return "Hello! How can I assist you today? To know more about our mexican recipe collection, type 'recipe'";
+        return "Hello! How can I assist you today?, input 'recipe' to know more about our mexican recipe collection";
     } else if (lowerInput.includes("recipe")) {
         return "Sure! Here are ten delicious Mexican recipes you can try:\n\n1. Classic Guacamole\n2. Tacos al Pastor\n3. Carne Asada\n4. Gorditas\n5. Burrito\n6. Elote\n7. Enchiladas\n8. Quesadillas\n9. Mexican Stuffed Mushrooms\n10. Tamarind Chicken\n\nLet me know if you'd like more information about any specific recipe!";
     } else if (lowerInput.includes("classic guacamole")) {
@@ -41,3 +117,5 @@ function getBotResponse(input) {
         return "Sorry, I don't have information on that topic at the moment. Is there anything else you'd like to know?";
     }
 }
+
+
